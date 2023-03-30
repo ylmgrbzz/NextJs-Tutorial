@@ -1,9 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Layout from "../components/layout";
+
 const about = () => {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>About</title>
       </Head>
@@ -16,7 +18,7 @@ const about = () => {
           font-weight: 700;
         }
       `}</style>
-    </div>
+    </Layout>
   );
 };
 

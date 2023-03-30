@@ -5,7 +5,7 @@ export default function Layout({ children }) {
       <style jsx>
         {`
           .layout-page {
-            background-color: #f0f0f0;
+            background-color: #f2f2f2;
           }
         `}
       </style>
