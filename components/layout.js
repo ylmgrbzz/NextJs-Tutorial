@@ -1,14 +1,16 @@
+import styles from "./layout.module.css";
 export default function Layout({ children }) {
   return (
-    <div className="layout-page">
+    // <div className={styles.layout}>
+    <div>
       {children}
-      <style jsx>
+      {/* <style jsx>
         {`
           .layout-page {
-            background-color: #f2f2f2;
+            background-color: lime;
           }
         `}
-      </style>
+      </style> */}
     </div>
   );
 }

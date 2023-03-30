@@ -5,7 +5,8 @@ import Layout from "../components/layout";
 
 const about = () => {
   return (
-    <Layout>
+    // <Layout>
+    <div>
       <Head>
         <title>About</title>
       </Head>
@@ -18,7 +19,8 @@ const about = () => {
           font-weight: 700;
         }
       `}</style>
-    </Layout>
+    </div>
+    // </Layout>
   );
 };
 

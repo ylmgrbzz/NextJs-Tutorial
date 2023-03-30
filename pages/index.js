@@ -6,17 +6,17 @@ import Layout from "../components/layout";
 
 export default function Home() {
   return (
-    <Layout>
-      <Head>
-        <title>Home</title>
-        <Link href="/about">About</Link>
-        <br />
-        <Link href="/blog">Blog</Link>
-        <br />
-        <Link href="/blog/post">Blog post</Link>
-        <br />
-        <Image src="/image/fb.jpg" width="300" height="200" />
-      </Head>
-    </Layout>
+    // <Layout>
+    <div>
+      <title>Home</title>
+      <Link href="/about">About</Link>
+      <br />
+      <Link href="/blog">Blog</Link>
+      <br />
+      <Link href="/blog/post">Blog post</Link>
+      <br />
+      <Image src="/image/fb.jpg" width="300" height="200" />
+    </div>
+    // </Layout>
   );
 }
