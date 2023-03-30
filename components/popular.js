@@ -7,13 +7,11 @@ export default function Popular({ movies }) {
       <div className="popular-inner">
         {movies.results.map((movie) => (
           <Link href={`/film/${movie.id}`}>
-            <a>
-              <h3>{movie.title}</h3>
-              <img
-                src={`https://www.themoviedb.org/t/p/w220_and_h330_face${movie.poster_path}`}
-                alt=""
-              />
-            </a>
+            <h3>{movie.title}</h3>
+            <img
+              src={`https://www.themoviedb.org/t/p/w220_and_h330_face${movie.poster_path}`}
+              alt=""
+            />
           </Link>
         ))}
       </div>
