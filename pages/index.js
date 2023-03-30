@@ -10,7 +10,6 @@ function Home({ movies }) {
   return (
     // <Layout>
     <>
-      ylm
       {/* <title>Home</title>
       <Link href="/about">About</Link>
       <br />

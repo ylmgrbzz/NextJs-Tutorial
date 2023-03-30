@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
 export default function Popular({ movies }) {
@@ -6,12 +7,15 @@ export default function Popular({ movies }) {
       <h2>Popüler Filmler</h2>
       <div className="popular-inner">
         {movies.results.map((movie) => (
-          <Link href={`/film/${movie.id}`}>
-            <h3>{movie.title}</h3>
-            <img
-              src={`https://www.themoviedb.org/t/p/w220_and_h330_face${movie.poster_path}`}
-              alt=""
-            />
+          // eslint-disable-next-line react/jsx-key
+          <Link href={`/film/${movie.id}`} legacyBehavior>
+            <a>
+              <h3>{movie.title}</h3>
+              <img
+                src={`https://www.themoviedb.org/t/p/w220_and_h330_face${movie.poster_path}`}
+                alt=""
+              />
+            </a>
           </Link>
         ))}
       </div>

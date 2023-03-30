@@ -6,13 +6,19 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link href="/">Anasayfa</Link>
+            <Link href="/" legacyBehavior>
+              <a>Anasayfa</a>
+            </Link>
           </li>
           <li>
-            <Link href="/about">Hakkında </Link>
+            <Link href="/about" legacyBehavior>
+              <a>Hakkında</a>
+            </Link>
           </li>
           <li>
-            <Link href="/blog">Blog </Link>
+            <Link href="/blog" legacyBehavior>
+              <a>Blog</a>
+            </Link>
           </li>
         </ul>
       </nav>
